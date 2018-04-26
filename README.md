@@ -2,5 +2,9 @@
 
 ```
 * 1. Progressive Web App?
+* 2. Service Workers
+* 3. Add Home Screen for PWA
+* 4. Manifest configuration for PWA 
+* 5. Add Custom icon 
 
 ```
