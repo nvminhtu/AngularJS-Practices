@@ -7,4 +7,8 @@
 * 4. Manifest configuration for PWA 
 * 5. Add Custom icon 
 
+
+## AngularJS Course with Khoa Pham
+
+* [AngularJS API](https://angular.io/api)
 ```
