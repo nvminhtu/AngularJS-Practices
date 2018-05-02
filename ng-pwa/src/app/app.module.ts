@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-
+import { WordComponent } from './word.component'; // ko cần gọi .ts ở đây
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WordComponent
   ],
   imports: [
     BrowserModule
