@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserFormComponent implements OnInit {
 
+  name = '';
   constructor() { }
 
   ngOnInit() {
   }
 
+  showEvent(event) {
+    //console.log(event.target.value);
+    this.name = event.target.value;
+  }
 }
