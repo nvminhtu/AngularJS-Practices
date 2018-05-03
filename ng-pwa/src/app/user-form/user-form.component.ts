@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class UserFormComponent implements OnInit {
 
   name = '';
+  isHighlight = true;
   constructor() { }
 
   ngOnInit() {

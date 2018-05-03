@@ -20,9 +20,10 @@
 * Event Binding
 * Text Input Customize (How to anchor varable with value of specific event)
 * Two Way binding
-
+* Class Binding và Style Binding
 
 ## AngularJS Course with Khoa Pham
 
 * [AngularJS API](https://angular.io/api)
+* [Ng Style - Style Binding](https://alligator.io/angular/style-binding-ngstyle-angular/)
 ```
