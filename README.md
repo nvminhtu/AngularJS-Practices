@@ -7,6 +7,16 @@
 * 4. Manifest configuration for PWA 
 * 5. Add Custom icon 
 
+## AngularJS 4
+* Introduction
+* Install Angular JS, Node JS, Yarn
+* Component, Definition
+* Basic Component
+* Component Decorators
+* Integerate Bootstrap to AngularJS
+* Create Component with Command Line
+* Data Binding
+* Property Binding
 
 ## AngularJS Course with Khoa Pham
 
