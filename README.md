@@ -17,6 +17,10 @@
 * Create Component with Command Line
 * Data Binding
 * Property Binding
+* Event Binding
+* Text Input Customize
+* Two Way binding
+
 
 ## AngularJS Course with Khoa Pham
 

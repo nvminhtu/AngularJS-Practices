@@ -15,6 +15,11 @@ export class WordComponent {
     vn = 'Xin chào';
     imageUrl = 'https://angular.io/assets/images/logos/angular/logo-nav@2x.png';
     forgot = false;
+
+    // khai báo function - ko cần từ function trong class
+    toggleForgot() {
+        this.forgot = !this.forgot; // truy cập đến thuộc tính
+    }
 }
 
 // `` dùng để code chuỗi trên nhiều dòng
