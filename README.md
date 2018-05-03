@@ -18,7 +18,7 @@
 * Data Binding
 * Property Binding
 * Event Binding
-* Text Input Customize
+* Text Input Customize (How to anchor varable with value of specific event)
 * Two Way binding
 
 
