@@ -23,6 +23,8 @@
 * Class Binding và Style Binding
 * Directives
 * ngStyle và ngClass
+* ngIf
+* ngFor 
 
 ## AngularJS Course with Khoa Pham
 
