@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WordsComponent implements OnInit {
   // thuộc tính của component nên bỏ kiểu đi
+  newVn = '';
+  newEn = '';
+
   arrWords = [
       { id: 1, en: 'action', vn: 'hành động', memorized: true },
       { id: 2, en: 'actor', vn: 'diễn viên', memorized: false },
@@ -18,6 +21,18 @@ export class WordsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
+  addWord() {
+    this.arrWords.unshift({
+      id: this.arrWords.length + 1,
+      en: this.newEn,
+      vn: this.newVn,
+      memorized: false
+    });
+
+    this.newEn = '';
+    this.newVn = '';
+  }
 }

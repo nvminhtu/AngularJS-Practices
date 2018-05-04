@@ -25,6 +25,7 @@
 * ngStyle và ngClass
 * ngIf
 * ngFor 
+* add Array item to Array - with ngFor
 
 ## AngularJS Course with Khoa Pham
 
