@@ -21,6 +21,8 @@
 * Text Input Customize (How to anchor varable with value of specific event)
 * Two Way binding
 * Class Binding và Style Binding
+* Directives
+* ngStyle và ngClass
 
 ## AngularJS Course with Khoa Pham
 

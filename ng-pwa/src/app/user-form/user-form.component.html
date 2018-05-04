@@ -1,7 +1,9 @@
 <input type="text" placeholder="Enter your Username" [(ngModel)]="name">
 <!-- <h3 [style.color] = "name.length % 2 === 0 ? 'red' : 'blue'" >Your name is : {{ name }}</h3> -->
 <!-- <h3 [style.color] = "name.length % 2 === 0 ? 'red' : 'blue'" >Your name is : {{ name }}</h3> -->
-<h3 [style.color] = "isHighlight ? 'red' : 'blue'" >Your name is : {{ name }}</h3>
+<!-- <h3 [style.color] = "isHighlight ? 'red' : 'blue'" >Your name is : {{ name }}</h3> -->
 
+<h3 [ngStyle]="name.length % 2 === 0? evenStyle : oddStyle">Text color</h3>
 <!-- <div [class]="isHighlight ? 'circle': 'square'"></div> -->
 <div [class.circle]="!isHighlight" [class.square]="isHighlight"></div>
+<div [ngClass]="currentClass"></div>
