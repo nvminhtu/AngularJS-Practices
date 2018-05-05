@@ -26,6 +26,7 @@
 * ngIf
 * ngFor 
 * add Array item to Array - with ngFor
+* Ẩn hiện Form trong AngularJS
 
 ## AngularJS Course with Khoa Pham
 

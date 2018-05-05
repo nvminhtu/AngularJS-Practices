@@ -9,6 +9,7 @@ export class WordsComponent implements OnInit {
   // thuộc tính của component nên bỏ kiểu đi
   newVn = '';
   newEn = '';
+  isShowForm = false;
 
   arrWords = [
       { id: 1, en: 'action', vn: 'hành động', memorized: true },
@@ -31,7 +32,7 @@ export class WordsComponent implements OnInit {
       vn: this.newVn,
       memorized: false
     });
-
+    this.isShowForm = false;
     this.newEn = '';
     this.newVn = '';
   }
