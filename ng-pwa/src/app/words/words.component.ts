@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WordsComponent implements OnInit {
   // thuộc tính của component nên bỏ kiểu đi
+  filterStatus = "XEM_TAT_CA";
   newVn = '';
   newEn = '';
   isShowForm = false;
