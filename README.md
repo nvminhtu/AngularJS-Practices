@@ -27,6 +27,8 @@
 * ngFor 
 * add Array item to Array - with ngFor
 * Ẩn hiện Form trong AngularJS
+* Remove item from array displayed.
+
 
 ## AngularJS Course with Khoa Pham
 

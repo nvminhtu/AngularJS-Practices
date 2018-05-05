@@ -36,4 +36,8 @@ export class WordsComponent implements OnInit {
     this.newEn = '';
     this.newVn = '';
   }
+  removeWord(id : number) { //truyền vào kiểu cho id luôn
+    const index = this.arrWords.findIndex(word => word.id === id); // lấy id cần xóa.
+    this.arrWords.splice(index,1);
+  }
 }
