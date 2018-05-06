@@ -1,0 +1,11 @@
+<!-- Cách 1 -->
+<!-- <div *ngFor="let person of arrPeople"> 
+  <app-person [name]="person.name" [age]="person.age"></app-person>
+</div> -->
+
+<!-- 2.Cách 2 -->
+<ng-container *ngFor="let person of arrPeople"> 
+  <app-person [name]="person.name" [age]="person.age"></app-person>
+</ng-container> 
+<!-- Nhúng thêm component vào trong component -->
+<!-- truyền giá trị vào cần dấu [] -->

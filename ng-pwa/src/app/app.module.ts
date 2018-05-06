@@ -12,6 +12,7 @@ import { ParentComponent } from './parent.component';
 import { ChildComponent } from './child.component';
 import { StoryComponent } from './story/story.component';
 import { PersonComponent } from './person/person.component';
+import { ListPersonComponent } from './list-person/list-person.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PersonComponent } from './person/person.component';
     StructComponent,
     WordsComponent,
     StoryComponent,
-    PersonComponent
+    PersonComponent,
+    ListPersonComponent
   ],
   imports: [
     BrowserModule,

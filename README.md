@@ -30,6 +30,7 @@
 * Remove item from array displayed.
 * Lọc mảng hiển thị
 * @Input - parse parameter data to Component
+* Using ngFor with component (use @Input) => lồng component
 
 ## AngularJS Course with Khoa Pham
 
