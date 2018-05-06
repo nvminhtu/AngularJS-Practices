@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class UserFormComponent implements OnInit {
 
   name = '';
+  isHighlight = false;
+  evenStyle = { fontSize: '12px', color: 'red' };
+  oddStyle = { fontSize: '14px', color: 'black' };
+  currentClass = { circle: !this.isHighlight, square: this.isHighlight};
+
   constructor() { }
 
   ngOnInit() {
