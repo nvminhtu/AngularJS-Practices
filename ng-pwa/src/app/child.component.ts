@@ -1,9 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+
 
 @Component({
     selector: 'app-child',
-    template: '<button>Add</button>'
+    template: '<button (click)="addforParent()">Add</button>'
 })
 
-export class ChildComponent {}
+export class ChildComponent {
+    @Output() myClick = new EventEmitter;
+    
+    addforParent() {
+        this.myClick.emit(); // khởi tạo hàm
+    }
+}
 
