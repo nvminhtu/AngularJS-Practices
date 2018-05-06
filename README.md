@@ -29,6 +29,7 @@
 * Ẩn hiện Form trong AngularJS
 * Remove item from array displayed.
 * Lọc mảng hiển thị
+* @Input - parse parameter data to Component
 
 ## AngularJS Course with Khoa Pham
 
