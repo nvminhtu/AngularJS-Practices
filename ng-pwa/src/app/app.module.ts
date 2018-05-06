@@ -8,11 +8,11 @@ import { BookComponent } from './book/book.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { StructComponent } from './struct/struct.component';
 import { WordsComponent } from './words/words.component'; // ko cần gọi .ts ở đây
-import { ParentComponent } from './parent.component';
-import { ChildComponent } from './child.component';
 import { StoryComponent } from './story/story.component';
 import { PersonComponent } from './person/person.component';
 import { ListPersonComponent } from './list-person/list-person.component';
+import { ParentComponent } from './parent.component';
+import { ChildComponent } from './child.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,9 @@ import { ListPersonComponent } from './list-person/list-person.component';
     WordsComponent,
     StoryComponent,
     PersonComponent,
-    ListPersonComponent
+    ListPersonComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

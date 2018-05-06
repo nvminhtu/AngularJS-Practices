@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-child',
-    template: '<h3>The Child Component</h3>'
+    template: '<button>Add</button>'
 })
 
 export class ChildComponent {}

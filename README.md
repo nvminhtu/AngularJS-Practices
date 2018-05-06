@@ -32,6 +32,7 @@
 * @Input - parse parameter data to Component
 * Using ngFor with component (use @Input) => lồng component
 * Child Component can change properties of Parent Component
+* Tạo cấu trúc Child-Parent Component để tạo action thay đổi giá trị value của Parent từ Child Component
 
 ## AngularJS Course with Khoa Pham
 
