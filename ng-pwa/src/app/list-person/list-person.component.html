@@ -5,7 +5,11 @@
 
 <!-- 2.Cách 2 -->
 <ng-container *ngFor="let person of arrPeople"> 
-  <app-person [name]="person.name" [age]="person.age"></app-person>
+  <app-person 
+    [name]="person.name"
+    [age]="person.age"
+    (removePerson) = "removePersonByName($event)"
+    ></app-person>
 </ng-container> 
 <!-- Nhúng thêm component vào trong component -->
 <!-- truyền giá trị vào cần dấu [] -->

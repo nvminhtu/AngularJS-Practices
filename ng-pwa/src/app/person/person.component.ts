@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -9,11 +9,16 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PersonComponent implements OnInit {
   
   // tham biến truyền vào Component - khai báo trong class xuất ra của Component
-  @Input () name: String;
-  @Input () age: Number;
+  @Input() name: string;
+  @Input() age: Number;
+  @Output() removePerson = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  removeByClick() {
+    this.removePerson.emit(this.name); //truyền vào name của person cần xóa
+  }
 }
