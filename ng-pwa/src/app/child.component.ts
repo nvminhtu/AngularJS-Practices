@@ -10,10 +10,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 
 export class ChildComponent {
-    @Output() myClick = new EventEmitter<boolean>();
+    @Output() myClick = new EventEmitter<boolean>(); // setup để Angularjs hiểu kiểu dữ liệu truyền vào
     
     addforParent() {
-        this.myClick.emit(true); // khởi tạo hàm - truyền giá trị vào
+        this.myClick.emit(); // khởi tạo hàm - truyền giá trị vào
     }
 
     subforParent() {
