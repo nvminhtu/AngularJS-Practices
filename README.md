@@ -36,6 +36,8 @@
 * Cách truyền tham biến vào hàm Child-Parent thông qua Hàm: Emit, Emitter
 * Practice @Output
 * Use @ViewChild
+* ngContent - parse data to component display
+
 
 ## AngularJS Course with Khoa Pham
 
