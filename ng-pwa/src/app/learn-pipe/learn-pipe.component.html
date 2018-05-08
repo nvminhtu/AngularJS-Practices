@@ -26,6 +26,17 @@
 </p>
 
 <!-- Custom Pipe -->
+<!-- <p>
+  {{ 1.9 | roundNum : true }}
+</p>
 <p>
-  {{ 1.9 | roundNum }}
+    {{ 1.9 | roundNum : false }}
+</p> -->
+
+<!-- Custom Pipe with complext parameter -->
+<p>
+    {{ 1.9 | roundNum : true : 2 }}
+</p>
+<p>
+    {{ 4.1 | roundNum : false : 2 }}
 </p>
