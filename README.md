@@ -39,6 +39,7 @@
 * ngContent - parse data to component display
 * Build-in pipes
 * Custom Pipe - Tự định nghĩa kiểu Pipe riêng để qui ước
+* Custom pipe - truyền thêm tham số cho Pipe
 
 
 ## AngularJS Course with Khoa Pham
