@@ -34,6 +34,8 @@
 * Child Component can change properties of Parent Component
 * Tạo cấu trúc Child-Parent Component để tạo action thay đổi giá trị value của Parent từ Child Component, sử dụng @Output
 * Cách truyền tham biến vào hàm Child-Parent thông qua Hàm: Emit, Emitter
+* Practice @Output
+* Use @ViewChild
 
 ## AngularJS Course with Khoa Pham
 
