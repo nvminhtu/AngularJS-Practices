@@ -37,6 +37,7 @@
 * Practice @Output
 * Use @ViewChild
 * ngContent - parse data to component display
+* Build in pipes
 
 
 ## AngularJS Course with Khoa Pham

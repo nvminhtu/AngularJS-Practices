@@ -1,0 +1,26 @@
+<p>
+  {{ birthday | date: 'shortTime' }}
+</p>
+<p>
+    {{ birthday | date: 'fullTime' }}
+</p>
+<!-- Xuất định dạng pipe khác -->
+<p>
+    {{ person | json }}
+</p>
+  
+<!-- Định dạng text - 1 loại pipe khác -->
+<p>
+  {{ person.name | uppercase }}
+</p>
+<p>
+  {{ person.name | titlecase }}  
+</p>
+
+<!-- Các pipe có thể gọi liên tiếp nhau -->
+<p>
+    {{ person | json | uppercase }}
+</p>
+<p>
+  {{ address | async }}
+</p>
