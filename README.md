@@ -37,7 +37,8 @@
 * Practice @Output
 * Use @ViewChild
 * ngContent - parse data to component display
-* Build in pipes
+* Build-in pipes
+* Custom Pipe - Tự định nghĩa kiểu Pipe riêng để qui ước
 
 
 ## AngularJS Course with Khoa Pham
