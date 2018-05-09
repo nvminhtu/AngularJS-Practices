@@ -41,7 +41,7 @@
 * Custom Pipe - Tự định nghĩa kiểu Pipe riêng để qui ước
 * Custom pipe - truyền thêm tham số cho Pipe
 * Service - data service, CRUD, calculation, logging service,... - Viết service ra file riêng (tách riêng khỏi component - để dễ quản lý).
-* ngOnInit - có thể sử dụng chung hoặc riêng ( Provider )
+* ngOnInit - có thể sử dụng chung hoặc riêng ( Provider)
 
 
 ## AngularJS Course with Khoa Pham
