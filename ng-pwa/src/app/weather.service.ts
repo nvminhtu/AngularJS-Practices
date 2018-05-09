@@ -14,3 +14,4 @@ export class WeatherService {
         .then(res => res.json())
         .then(resJson => resJson.main.temp);
     }
+}

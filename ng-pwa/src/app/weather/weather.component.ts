@@ -12,6 +12,7 @@ export class WeatherComponent implements OnInit {
   txtCityName = '';
   cityName = '';
   temp = '';
+  isLoading = false;
   constructor(private weatherservice : WeatherService) { }
 
   // ngOnInit() {
@@ -22,11 +23,26 @@ export class WeatherComponent implements OnInit {
 
   ngOnInit() {}
   getWeather() {
+    this.isLoading = true;
     this.weatherservice.getTemp(this.txtCityName)
     .then(temp=> {
       this.cityName = this.txtCityName;
       this.temp = temp;
+      // lấy xong
+      this.isLoading = false;
     })
-    .then(err=>console.log(err))
+    .catch( err => {
+      alert('Cannot find your city!');
+      this.isLoading = false;
+      this.cityName = '';
+    })
+  }
+  // function show for user
+
+  getMessage() {
+    if(this.isLoading) {
+      return 'Loading...';
+    }
+    return this.cityName === '' ? 'Enter your city name': ( this.cityName + ' is now: ' + this.temp);
   }
 }
