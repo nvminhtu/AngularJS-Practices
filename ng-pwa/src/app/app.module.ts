@@ -19,7 +19,7 @@ import { LearnPipeComponent } from './learn-pipe/learn-pipe.component';
 import { RoundPipe } from './round.pipe';
 import { IpComponent } from './ip.component';
 import { WeatherComponent } from './weather/weather.component';
-
+import { SignInComponent } from './sign-in.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,8 @@ import { WeatherComponent } from './weather/weather.component';
     LearnPipeComponent,
     RoundPipe,
     IpComponent,
-    WeatherComponent
+    WeatherComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
