@@ -1,5 +1,5 @@
 <p>
-  Saigon is now: 
+  {{ cityName === '' ? 'Enter your city name': ( cityName + ' is now: ' + temp) }}
 </p>
-<input placeholder="Enter your city" type="text"><br>
-<button>Get weather</button>
+<input placeholder="Enter your city" type="text" [(ngModel)]="txtCityName"><br>
+<button (click)="getWeather();">Get weather</button>
