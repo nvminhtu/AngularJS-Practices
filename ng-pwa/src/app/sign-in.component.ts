@@ -1,40 +1,55 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
+import { SignInService } from './sign-in.service';
 
-@Component ({
-    selector: 'app-signin',
+@Component({
+    selector: 'app-sign-in',
     template: `
-            <form (submit)="onSubmit(formSignin);" #formSignin="ngForm"> 
-                <input placeholder="Email" [(ngModel)]="email" name="email">
-                <br><br>
-                <input type="password" placeholder="Password" [(ngModel)]="password" name="password">
-                <br><br>
-                <button>Click to show log Email and Password</button>
-            </form>
-        `
-    
+        <form (ngSubmit)="onSubmit(formSignIn);" #formSignIn="ngForm">
+            <input
+                placeholder="Email"
+                ngModel
+                #txtEmail="ngModel"
+                name="email"
+                required
+                email
+            >
+            <p *ngIf="txtEmail.touched && txtEmail.errors?.required">
+                Email is required
+            </p>
+            <p *ngIf="txtEmail.touched && txtEmail.errors?.email">
+                Email is not valid
+            </p>
+            <br><br>
+            <input
+                type="password"
+                placeholder="Password"
+                ngModel
+                #txtPassword="ngModel"
+                name="password"
+                minlength="6"
+                pattern="[a-z]*"
+            >
+            <br><br>
+            <div ngModelGroup="subjects">
+                <label><input type="checkbox" [ngModel]="false" name="NodeJS"> NodeJS</label>
+                <label><input type="checkbox" [ngModel]="false" name="Angular"> Angular</label>
+                <label><input type="checkbox" [ngModel]="false" name="ReactJS"> ReactJS</label>
+            </div>
+            <br><br>
+            <button [disabled]="formSignIn.invalid">Submit</button>
+        </form>
+        <p>{{ txtEmail.errors | json }}</p>
+        <p>{{ txtPassword.errors | json }}</p>
+        <p>{{ formSignIn.value | json }}</p>
+    `,
+    providers: [SignInService]
 })
 
 export class SignInComponent {
-    email = '';
-    password = '';
-    onSubmit(formSignin) {
-        console.log(formSignin.value);
+    constructor(private signInService: SignInService) {}
+    onSubmit(formSignIn) {
+        this.signInService.sendPost(formSignIn.value)
+        .then(result => console.log(result))
+        .catch(err => console.log(err));
     }
 }
-// @Component ({
-//     selector: 'app-signin',
-//     template: `
-//         <input placeholder="Email" [(ngModel)]="email">
-//         <br><br>
-//         <input type="password" placeholder="Password" [(ngModel)]="password">
-//         <br><br>
-//         <button (click)="onSubmit()">Click to show log Email and Password</button>
-//     `
-// })
-// export class SignInComponent {
-//     email = '';
-//     password = '';
-//     onSubmit() {
-//         console.log(this.email, this.password);
-//     }
-// }
