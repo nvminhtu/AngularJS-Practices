@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { SignInService } from './sign-in.service';
+import { Http, Headers } from '@angular/http';
+import 'rxjs/add/operator/toPromise';
 
 @Component({
     selector: 'app-sign-in',
@@ -41,15 +42,20 @@ import { SignInService } from './sign-in.service';
         <p>{{ txtEmail.errors | json }}</p>
         <p>{{ txtPassword.errors | json }}</p>
         <p>{{ formSignIn.value | json }}</p>
-    `,
-    providers: [SignInService]
+    `
 })
 
+// export class SignInComponent {
+//     constructor(private signInService: SignInService) {}
+//     onSubmit(formSignIn) {
+//         this.signInService.sendPost(formSignIn.value)
+//         .then(result => console.log(result))
+//         .catch(err => console.log(err));
+//     }
+// }
 export class SignInComponent {
-    constructor(private signInService: SignInService) {}
+    constructor(private http: Http){}
     onSubmit(formSignIn) {
-        this.signInService.sendPost(formSignIn.value)
-        .then(result => console.log(result))
-        .catch(err => console.log(err));
+        console.log(formSignIn);
     }
 }
