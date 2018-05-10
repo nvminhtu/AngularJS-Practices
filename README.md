@@ -43,7 +43,7 @@
 * Service - data service, CRUD, calculation, logging service,... - Viết service ra file riêng (tách riêng khỏi component - để dễ quản lý).
 * ngOnInit - có thể sử dụng chung hoặc riêng ( Provider)
 * Form - ngForm torng AngularJS: Template-driven forms, Reactive Forms
-
+* Tạo Node server - Express
 
 ## AngularJS Course with Khoa Pham
 
